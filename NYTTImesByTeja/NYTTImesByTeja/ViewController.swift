@@ -80,7 +80,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 //        cell.apiLbl.text = viewModel.newData?[indexPath.row].API
 //        cell.descLbl.text = viewModel.newData?[indexPath.row].Description
 //        cell.catogeryLbl.text = viewModel.newData?[indexPath.row].Category
-        print("Cherry pick")
+
 
         return cell
     }
