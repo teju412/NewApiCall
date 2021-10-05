@@ -76,6 +76,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = viewModel.newsDocs.value?[indexPath.row].fullName
         cell.detailTextLabel?.text = viewModel.newsDocs.value?[indexPath.row].abstract
+        print("submodule t2")
 //        cell.apiLbl.text = viewModel.newData?[indexPath.row].API
 //        cell.descLbl.text = viewModel.newData?[indexPath.row].Description
 //        cell.catogeryLbl.text = viewModel.newData?[indexPath.row].Category
