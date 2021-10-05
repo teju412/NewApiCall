@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         routes = RoutingStruct.init(vc: self)
         super.viewDidLoad()
+        print("")
         dataReload()
     }
     func dataReload() {
@@ -31,6 +32,23 @@ class ViewController: UIViewController {
     }
 
 }
+/**
+ Master -> Branch A -> NYTCODE
+ Viewcontroller push  -> either vengal or you -> Branch-A
+ 
+ Branch_A -> NytModules(Branch) -> Push -> BanchA MR -> merger
+ Branch_A -> PUblicSearch(Brach) -> Push ->  PUblicSearch MR BranchA -> Vengal changes
+ 
+ SigunupFLow -> 2days
+ 
+ MasterBranch -> push
+ 
+ LoginModuleFeatureBrnahc     ;-Design Screen -1  , APICalling- 2 , ErrorCheking- 1
+ 
+ SUbtask1 branch - Desingcode -> LoginModuleFeatureBrnahc MR
+ Subtask2 - APi MR
+ SUbtask3 ;- Errorchecking -MR
+ */
 //extension ViewController: UITableViewDataSource, UITableViewDelegate {
 //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return viewModel.newData?.count ?? 2
