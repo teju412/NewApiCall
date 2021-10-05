@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         routes = RoutingStruct.init(vc: self)
         super.viewDidLoad()
-        print("")
+        print("Doing this change in public search")
         dataReload()
     }
     func dataReload() {
